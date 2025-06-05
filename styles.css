@@ -20,3 +20,99 @@ header {
   top: 0;
   z-index: 1000;
 }
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+
+#home {
+  background: linear-gradient(rgba(139, 69, 19, 0.7), rgba(210, 105, 30, 0.7)),
+    url("/placeholder.svg?height=600&width=1200") center / cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+}
+
+#home div {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+#home h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+#home a {
+  display: inline-block;
+  background: #ffd700;
+  color: #8b4513;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+#home a:hover {
+  background: #ffa500;
+}
